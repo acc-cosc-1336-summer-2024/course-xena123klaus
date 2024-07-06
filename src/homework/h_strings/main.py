@@ -19,8 +19,12 @@ def main_menu():
 
         elif choice == "2":
             dna = input("Enter the DNA string: ")
-            complement = get_dna_complement(dna)
-            print("DNA complement: " + complement)
+            try:
+                complement = get_dna_complement(dna)
+                print("DNA complement: " + complement)
+            except ValueError as e:
+                print("Error: " + str(e)) 
+        
 
         elif choice == "3":
             print("Exiting the program. ")

@@ -11,5 +11,11 @@ def get_hamming_distance(dna1, dna2):
 def get_dna_complement(dna):
     complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
     reversed_dna = dna[::-1]
-    complement_dna = ''.join(complement[ch] for ch in reversed_dna)
+    complement_dna = ''
+    for ch in reversed_dna:
+        if ch not in complement:
+            raise ValueError("Invalid symbol in DNA string: " + ch)
+        complement_dna += complement[ch]
+        
     return complement_dna
+
