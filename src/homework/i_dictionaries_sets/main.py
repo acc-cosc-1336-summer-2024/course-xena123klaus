@@ -30,7 +30,9 @@ def main():
             matrix = get_p_distance_matrix(dna_strings)
             print("P-distance matrix:")
             for row in matrix:
-                print(' '.join("{:.5f}".format(dist) for dist in row))
+                for dist in row:
+                    print("{:.5f}".format(dist), end=' ')
+                print()
         
         elif choice == '2':
             break
