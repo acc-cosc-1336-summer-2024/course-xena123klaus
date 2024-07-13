@@ -1,1 +1,3 @@
-#
+import dictionary
+
+dictionary.main()
