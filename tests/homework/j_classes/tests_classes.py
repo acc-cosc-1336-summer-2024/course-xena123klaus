@@ -15,3 +15,4 @@ class TestDie(unittest.TestCase):
         expected_output = f"The rolled value is {die.get_rolled_value()}"
         self.assertEqual(str(die), expected_output, "String representation is incorrect")
 
+#making sure it all gets commitemed at once

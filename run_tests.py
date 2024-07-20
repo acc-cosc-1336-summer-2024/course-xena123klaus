@@ -12,3 +12,4 @@ unittest.TextTestRunner(verbosity=2).run(suite)
 
 
 
+#making sure it all gets commitemed at once

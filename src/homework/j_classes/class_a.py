@@ -25,3 +25,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#making sure it all gets commitemed at once
